@@ -1,0 +1,203 @@
+*{
+        margin:0;
+            padding:0;
+                box-sizing:border-box;
+                    font-family:'Segoe UI',sans-serif;
+                    }
+
+                    body{
+                        min-height:100vh;
+                            display:flex;
+                                justify-content:center;
+                                    align-items:center;
+
+                                        background:linear-gradient(
+                                            135deg,
+                                                #021024,
+                                                    #052659,
+                                                        #5483B3,
+                                                            #7DA0CA);
+
+                                                                overflow:hidden;
+                                                                }
+
+                                                                .background-icons{
+                                                                    position:absolute;
+                                                                        width:100%;
+                                                                            height:100%;
+                                                                                z-index:0;
+                                                                                }
+
+                                                                                .background-icons i{
+                                                                                    position:absolute;
+                                                                                        color:rgba(255,255,255,0.08);
+                                                                                            font-size:90px;
+                                                                                            }
+
+                                                                                            .background-icons i:nth-child(1){
+                                                                                                top:10%;
+                                                                                                    left:15%;
+                                                                                                    }
+
+                                                                                                    .background-icons i:nth-child(2){
+                                                                                                        top:20%;
+                                                                                                            right:20%;
+                                                                                                            }
+
+                                                                                                            .background-icons i:nth-child(3){
+                                                                                                                bottom:20%;
+                                                                                                                    left:10%;
+                                                                                                                    }
+
+                                                                                                                    .background-icons i:nth-child(4){
+                                                                                                                        bottom:15%;
+                                                                                                                            right:15%;
+                                                                                                                            }
+
+                                                                                                                            .background-icons i:nth-child(5){
+                                                                                                                                top:50%;
+                                                                                                                                    left:45%;
+                                                                                                                                    }
+
+                                                                                                                                    .background-icons i:nth-child(6){
+                                                                                                                                        top:70%;
+                                                                                                                                            right:40%;
+                                                                                                                                            }
+
+                                                                                                                                            .container{
+                                                                                                                                                width:420px;
+                                                                                                                                                    background:rgba(255,255,255,0.12);
+
+                                                                                                                                                        backdrop-filter:blur(12px);
+
+                                                                                                                                                            border:1px solid rgba(255,255,255,0.2);
+
+                                                                                                                                                                padding:30px;
+                                                                                                                                                                    border-radius:20px;
+
+                                                                                                                                                                        z-index:1;
+
+                                                                                                                                                                            box-shadow:
+                                                                                                                                                                                0 0 30px rgba(0,0,0,0.3);
+                                                                                                                                                                                }
+
+                                                                                                                                                                                h1{
+                                                                                                                                                                                    color:white;
+                                                                                                                                                                                        text-align:center;
+                                                                                                                                                                                            margin-bottom:25px;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .senha-box{
+                                                                                                                                                                                                display:flex;
+                                                                                                                                                                                                    margin-bottom:20px;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .senha-box input{
+                                                                                                                                                                                                        flex:1;
+                                                                                                                                                                                                            padding:14px;
+                                                                                                                                                                                                                border:none;
+                                                                                                                                                                                                                    outline:none;
+                                                                                                                                                                                                                        border-radius:10px 0 0 10px;
+                                                                                                                                                                                                                            font-size:16px;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .senha-box button{
+                                                                                                                                                                                                                                width:60px;
+                                                                                                                                                                                                                                    border:none;
+                                                                                                                                                                                                                                        background:#1f6feb;
+                                                                                                                                                                                                                                            color:white;
+                                                                                                                                                                                                                                                cursor:pointer;
+                                                                                                                                                                                                                                                    border-radius:0 10px 10px 0;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    .length-container{
+                                                                                                                                                                                                                                                        margin-bottom:20px;
+                                                                                                                                                                                                                                                            color:white;
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                            .contador{
+                                                                                                                                                                                                                                                                margin-top:10px;
+                                                                                                                                                                                                                                                                    display:flex;
+                                                                                                                                                                                                                                                                        justify-content:center;
+                                                                                                                                                                                                                                                                            align-items:center;
+                                                                                                                                                                                                                                                                                gap:20px;
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                .contador button{
+                                                                                                                                                                                                                                                                                    width:40px;
+                                                                                                                                                                                                                                                                                        height:40px;
+                                                                                                                                                                                                                                                                                            border:none;
+                                                                                                                                                                                                                                                                                                border-radius:50%;
+                                                                                                                                                                                                                                                                                                    cursor:pointer;
+                                                                                                                                                                                                                                                                                                        background:#1f6feb;
+                                                                                                                                                                                                                                                                                                            color:white;
+                                                                                                                                                                                                                                                                                                                font-size:20px;
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                #lengthValue{
+                                                                                                                                                                                                                                                                                                                    font-size:22px;
+                                                                                                                                                                                                                                                                                                                        font-weight:bold;
+                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                        .options{
+                                                                                                                                                                                                                                                                                                                            display:flex;
+                                                                                                                                                                                                                                                                                                                                flex-direction:column;
+                                                                                                                                                                                                                                                                                                                                    gap:12px;
+                                                                                                                                                                                                                                                                                                                                        margin-bottom:20px;
+                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                        .options label{
+                                                                                                                                                                                                                                                                                                                                            color:white;
+                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                            .options input{
+                                                                                                                                                                                                                                                                                                                                                margin-right:10px;
+                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                #generate{
+                                                                                                                                                                                                                                                                                                                                                    width:100%;
+                                                                                                                                                                                                                                                                                                                                                        padding:15px;
+                                                                                                                                                                                                                                                                                                                                                            border:none;
+                                                                                                                                                                                                                                                                                                                                                                border-radius:10px;
+
+                                                                                                                                                                                                                                                                                                                                                                    background:linear-gradient(
+                                                                                                                                                                                                                                                                                                                                                                        90deg,
+                                                                                                                                                                                                                                                                                                                                                                            #1f6feb,
+                                                                                                                                                                                                                                                                                                                                                                                #5ea0ff);
+
+                                                                                                                                                                                                                                                                                                                                                                                    color:white;
+                                                                                                                                                                                                                                                                                                                                                                                        font-size:16px;
+                                                                                                                                                                                                                                                                                                                                                                                            font-weight:bold;
+
+                                                                                                                                                                                                                                                                                                                                                                                                cursor:pointer;
+                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                #generate:hover{
+                                                                                                                                                                                                                                                                                                                                                                                                    transform:scale(1.03);
+                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                    .security-container{
+                                                                                                                                                                                                                                                                                                                                                                                                        margin-top:20px;
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                        .security-bar{
+                                                                                                                                                                                                                                                                                                                                                                                                            width:100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                height:12px;
+                                                                                                                                                                                                                                                                                                                                                                                                                    background:#ccc;
+                                                                                                                                                                                                                                                                                                                                                                                                                        border-radius:20px;
+                                                                                                                                                                                                                                                                                                                                                                                                                            overflow:hidden;
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                            #strength{
+                                                                                                                                                                                                                                                                                                                                                                                                                                width:0%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                    height:100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                        transition:.4s;
+                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                        #securityText{
+                                                                                                                                                                                                                                                                                                                                                                                                                                            display:block;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                text-align:center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    color:white;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        margin-top:10px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            font-weight:bold;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
